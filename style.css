@@ -81,8 +81,8 @@ main {
 .conta:has(input:hover) div,
 .pessoas:has(input:focus) .input-box,
 .pessoas:has(input:hover) .input-box,
-.gorjeta #outra:focus,
-.gorjeta #outra:hover{
+.gorjeta #Outra:focus,
+.gorjeta #Outra:hover{
     outline: 2px solid var(--ligth-green);
     cursor: pointer;
 }
@@ -118,13 +118,13 @@ main {
     cursor: pointer;
 }
 
-.gorjeta #outra {
+.gorjeta #Outra {
     width: 100%;
     background-color: var(--green-100);
     color: var(--green-500);
 }
 
-.gorjeta #outra::placeholder {
+.gorjeta #Outra::placeholder {
     color: var(--green-300);
 }
 
@@ -194,7 +194,7 @@ main {
 
 .conta input::-webkit-inner-spin-button,
 .pessoas input::-webkit-inner-spin-button,
-.gorjeta #outra::-webkit-inner-spin-button{
+.gorjeta #Outra::-webkit-inner-spin-button{
     display: none;
 }
 
