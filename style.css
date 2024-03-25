@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Space Mono", serif;
+    font-family: "space mono", serif;
 }
 
 :root {
@@ -14,7 +14,7 @@
     --green-600: #547878;
     --green-700: #3D6666;
     --green-800: #00474B;
-    --light-green: #26C2AE;
+    --ligth-green: #26C2AE;
     --white: #FFFFFF;
     --green-hover: #9FE8DF;
     --danger: #E17457;
@@ -36,7 +36,7 @@ main {
     border-radius: 1.5625rem 1.5625rem 0 0;
 }
 
-.conta,
+.conta, 
 .gorjeta,
 .pessoas {
     margin-bottom: 2rem;
@@ -72,8 +72,8 @@ main {
     outline: none;
 }
 
-.conta input::placeholder, 
-.pessoas input::placeholder {
+.conta input ::placeholder,
+.pessoas input ::placeholder  {
     color: var(--green-300);
 }
 
@@ -81,14 +81,15 @@ main {
 .conta:has(input:hover) div,
 .pessoas:has(input:focus) .input-box,
 .pessoas:has(input:hover) .input-box,
-.gorjeta #Outra:focus,
-.gorjeta #Outra:hover {
-    outline: 2px solid var(--light-green);
+.gorjeta #outra:focus,
+.gorjeta #outra:hover{
+    outline: 2px solid var(--ligth-green);
     cursor: pointer;
 }
 
 .gorjeta div {
     margin-top: 1rem;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -107,23 +108,23 @@ main {
 }
 
 .gorjeta .botao-ativo {
-    background-color: var(--light-green);
+    background-color: var(--ligth-green);
     color: var(--green-800);
 }
 
 .gorjeta input[type="button"]:hover,
-.resultados button:hover {
+.resultados button:hover{
     background-color: var(--green-hover);
     cursor: pointer;
 }
 
-.gorjeta #Outra {
+.gorjeta #outra {
     width: 100%;
     background-color: var(--green-100);
-    color: var(--green-800);
+    color: var(--green-500);
 }
 
-.gorjeta #Outra::placeholder {
+.gorjeta #outra::placeholder {
     color: var(--green-300);
 }
 
@@ -167,7 +168,7 @@ main {
 }
 
 .resultados div > strong {
-    color: var(--light-green);
+    color: var(--ligth-green);
     font-size: 2rem;
 }
 
@@ -181,7 +182,7 @@ main {
 
 .resultados button {
     width: 100%;
-    background-color: var(--light-green);
+    background:var(--ligth-green) ;
     border: none;
     border-radius: 0.3125rem;
     color: var(--green-800);
@@ -193,8 +194,8 @@ main {
 
 .conta input::-webkit-inner-spin-button,
 .pessoas input::-webkit-inner-spin-button,
-.gorjeta #Outra::-webkit-inner-spin-button {
-     display: none;
+.gorjeta #outra::-webkit-inner-spin-button{
+    display: none;
 }
 
 @media(min-width: 920px) {
@@ -210,7 +211,7 @@ main {
         padding: 0;
     }
 
-    main {
+    main{
         display: flex;
         gap: 3rem;
         padding: 3rem;
@@ -232,7 +233,7 @@ main {
         flex-direction: column;
         justify-content: space-between;
 
-        padding: 2.5rem; 
+        padding: 2.5rem;
     }
 
     .resultados div > strong {
